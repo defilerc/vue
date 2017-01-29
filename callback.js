@@ -2,7 +2,11 @@ var data = { a: 1 };
 
 var vm = new Vue({
   el: '#example',
-  data: data
+  data: data,
+  created: function() {
+      // lifetimehook 'created'. note: 'this' points to vm instance
+      console.log('a is: ' + this.a);
+  }
 });
 
 //vm.$data === data // -> true
