@@ -1,0 +1,11 @@
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+<div id="app">
+    <span>now, a is {{a}}</span>
+    <span v-once>on load, a was {{a}}</span>
+    <p v-bind:style="'color: ' + color">i'm stylous!</p>
+    <button v-bind:disabled="btnDisabled">My Button</button>
+</div>
+
+
+<script src="templates.js"></script>
