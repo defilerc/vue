@@ -6,7 +6,14 @@ Vue.component('todo-item', {
   template: '<li>{{ todo.text }}</li>'
 });
 
-var app7 = new Vue({
+
+
+// Vue.component('newsitem', {
+//   props: ['newsit'],
+//   template: '<h1>{{ newsit.title }}</h1><p>Body Here: {{ newsit.body }}</p>'
+// });
+
+new Vue({
   el: '#app-7',
   data: {
     groceryList: [
@@ -15,4 +22,17 @@ var app7 = new Vue({
       { text: 'Whatever else humans are supposed to eat' }
     ]
   }
-})
+});
+
+Vue.component('news-item', {
+  props: ['title', 'body'],
+  template: '<article><h1>{{title}}</h1><p>{{body}}</p></article>'
+});
+
+new Vue({
+  el: '#app8',
+  data: {
+    hot: 5
+  }
+});
+
