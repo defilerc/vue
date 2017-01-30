@@ -1,0 +1,11 @@
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+<div id="example-1">
+  <button v-on:click="counter += 1">Add 1</button>
+  <button @click="counter += 2">Add 2</button>
+  <button @click="greet">Say Hi</button>
+  <p>Counter is now {{ counter }}.</p>
+  <span>{{greet}}</span>
+</div>
+
+<script src="events.js"></script>
