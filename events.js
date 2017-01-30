@@ -10,6 +10,13 @@ var app = new Vue({
             if (event) {
                 alert(event.target.tagName);
             }
+        },
+        warn: function (message, event) {
+            // now we have access to the native event
+            if (event) { 
+                event.preventDefault();
+            }
+            alert(message);
         }
     }
 });
