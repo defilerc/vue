@@ -9,4 +9,10 @@
   <button @click="warn('Form cannot be submitted yet.', $event)">Submit</button>
 </div>
 
+<div id="counter-event-example">
+  <p>{{ total }}</p>
+  <button-counter v-on:increment="incrementTotal"></button-counter>
+  <button-counter @increment="incrementTotal"></button-counter>
+</div>
+
 <script src="events.js"></script>
